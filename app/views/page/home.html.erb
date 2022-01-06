@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpha Blog</title>
-  </head>
-  <body>
+
+<div id="page-content">
+  <div id="article">
     <div class ="container" id="home-container">
-      <div class="jumbotron text-center text-white">
-        <h1 class ="display-4"> Alpha Blog </h1>
-        <p class="lead"> This is a simple hero unit, a simple jumbotron style component for calling extra attention to featured content or information. </p>
-        <hr class="my-4">
-        <p> It uses utility classes for typography and spacing to space content within the larger container.</p>
-        <a class="btn btn-success btn-lg" href="#" role="button">Sign Up!</a>  
-      </div>
-    </div> 
-    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-      <div class="container text-center">
-      <small>Copyright &copy; Alpha Blog Inc</small>
-      </div>
-    </footer>
-  </body>
-</html>
+        <div class="jumbotron text-center text-white">
+          <h1 class ="display-4 py-2"> Best Deals </h1>
+          <p class="lead"> Get Connected to The Best Deals On The Market. Anywhere Right From Home. Vacation? Only Get The Best Deals, Affordable Living? Check These Places Out, New Shopping Taste? Check Current Style Trends in Each Country , and so Much More!</p>
+          <hr class="my-4">
+          <p> It uses utility classes for typography and spacing to space content within the larger container.</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Sign Up!</a>  
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white">
+  <div class="container text-center">
+    <small>Copyright &copy; <%= link_to "Alpha Blog", about_path , class: "text-white"%>  </small>
+  </div>
+</footer>
+

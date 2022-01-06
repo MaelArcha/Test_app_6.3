@@ -1,56 +1,47 @@
 @import "bootstrap/dist/css/bootstrap";
-
-html,
-body {
-  height: 100%;
-}
-
 .navbar {
   background-color: black !important;
-}
-
-#logo {
-  float: left;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
 }
 
 .nav-link {
   color: white !important;
 }
 
-.navbar-brand {
-  font-size: 3rem;
-}
-
-h1 {
-  color: white;
-}
-
-#home-container {
-  margin-top: 25px;
-  margin-bottom: 40px;
-  flex: 1 0 auto;
-}
-
-#sticky-footer {
-  flex-shrink: none;
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 .jumbotron {
-  background: asset-url("jumbo-copy.jpg");
+  background-image: asset-url("jumbo-copy.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 425px;
 }
 
-.text-center {
-  padding: 50px 20px;
+html,
+body {
+  height: 100%;
+}
+
+#article {
+  margin-top: 50px;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
 }
 
 .btn-success {
-  margin-top: 100px;
+  margin-top: 70px;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
 }
