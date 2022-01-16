@@ -1,11 +1,14 @@
-<div id="article">
-  <div class ="container" id="home-container">
-    <div class="jumbotron text-center text-white">
-      <h1 class ="display-4 py-2"> Best Deals </h1>
-      <p class="lead"> Get Connected to The Best Deals On The Market. Anywhere Right From Home. Vacation? Only Get The Best Deals, Affordable Living? Check These Places Out, New Shopping Taste? Check Current Style Trends in Each Country , and so Much More!</p>
+<div class="article"> 
+  <div class="container " id="home-container">
+    <div class="jumbotron text-center text-white mt-4 shadow p-3 mb-5 bg-body rounded">
+      <h1 class="display-4 py-2">ALPHA BLOG </h1>
+      <p class="lead">This is a simple blog web application using ruby on rails </p>
       <hr class="my-4">
-      <p> It uses utility classes for typography and spacing to space content within the larger container.</p>
-      <a class="btn btn-success btn-lg" href="#" role="button">Sign Up!</a>  
-    </div>      
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <div>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <%= link_to "About" , about_path, class: "btn btn-primary btn-lg"%>
+      </div>
+    </div>
   </div>
 </div>
