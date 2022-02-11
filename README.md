@@ -1,13 +1,24 @@
 # README
 
-<!-- <div id="article">
-  <div class ="container" id="home-container">
-    <div class="jumbotron text-center text-white">
-      <h1 class ="display-4 py-2"> Best Deals </h1>
-      <p class="lead"> Get Connected to The Best Deals On The Market. Anywhere Right From Home. Vacation? Only Get The Best Deals, Affordable Living? Check These Places Out, New Shopping Taste? Check Current Style Trends in Each Country , and so Much More!</p>
-      <hr class="my-4">
-      <p> It uses utility classes for typography and spacing to space content within the larger container.</p>
-      <a class="btn btn-success btn-lg" href="#" role="button">Sign Up!</a>
+<!-- <h2 class="text-center mt-4"> <%= @article.title %> </h2>
+<div class= "container">
+  <div class = "row justify-content-md-center">
+    <div class= "col-8 mt-4">
+      <div class="card text-center shadow-lg mb-5 bg-white rounded">
+        <div class="card-header">
+          By <%= @article.user.username %>
+        </div>
+        <div class="card-body">
+          <div class="card-text text-start"><%= simple_format(@article.description)%>
+          </div>
+          <%= link_to "Edit", edit_article_path(@article), class:"btn btn-outline-primary"%>
+          <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure? "} , class:"btn btn-outline-danger"%>
+        </div>
+        <div class="card-footer text-muted">
+          <small> Created <%= time_ago_in_words(@article.created_at)%> ago,
+          Edited <%= time_ago_in_words(@article.updated_at)%> ago.
+            </small>
+        </div>
+      </div>
     </div>
-  </div>
 </div> -->
