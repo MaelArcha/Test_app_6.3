@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :user_set, only: [:edit, :update, :destroy]
+  before_action :user_set, only: [:edit, :show, :update, :destroy]
   
   def new
     @user = User.new 
@@ -27,6 +27,10 @@ class UsersController < ApplicationController
    end
   end
 
+  def show
+    @articles = @user.articles
+  end
+
   def destroy
     @user.destroy 
     redirect_to @user 
@@ -43,7 +47,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :email, :password)
   end
-
 
 
 end  

@@ -1,6 +1,6 @@
 # README
 
-<!-- <h2 class="text-center mt-4"> <%= @article.title %> </h2>
+<h2 class="text-center mt-4"> <%= @article.title %> </h2>
 <div class= "container">
   <div class = "row justify-content-md-center">
     <div class= "col-8 mt-4">
@@ -21,4 +21,4 @@
         </div>
       </div>
     </div>
-</div> -->
+</div>
