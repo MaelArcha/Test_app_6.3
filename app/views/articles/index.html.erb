@@ -1,12 +1,15 @@
-<h1 class="text-center mt-4"> All Articles </h1>
+<h1 class="text-center mt-4"> Listing All Articles </h1>
+
+
+
+<div class=" flickr_pagination mt-4">
+  <%= will_paginate @articles, :container => false %>
+</div>
+
 
 <%= render 'article'%>
 
-<p>
-<%= link_to 'Create New Article', new_article_path %> <br/>
-</p>
-<p>
-<%= link_to 'Home', root_path %> <br/>
-<%= link_to 'About', about_path%>
-</p>
+<div class=" flickr_pagination mt-4 mb-3">
+  <%= will_paginate @articles, :container => false %>
+</div>
 
