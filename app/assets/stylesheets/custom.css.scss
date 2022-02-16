@@ -65,6 +65,19 @@ body {
 .btn-success {
   margin-top: 70px;
 }
+
+.navbar-toggler {
+  border: 1px solid whitesmoke;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  border-color: lightslategray;
+  background-color: whitesmoke;
+}
+
 .card-title:hover {
   text-decoration: underline;
 }
