@@ -19,7 +19,7 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
     @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
-      flash[:success] = "Article was created successfully."
+      flash[:notice] = "Article was created successfully."
       redirect_to @article
     else 
       render 'new' 
